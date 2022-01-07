@@ -1,0 +1,523 @@
+//Assignment 11
+//Set A(1)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="style.js" class="js">
+</head>
+<body>
+    <div class="feedback-card">
+        <div class="feedback-header">SEND FEEDBACK</div>
+        <form class="feedback-body">
+          <input ,type="email" class="feedback-body__email" placeholder="Email" />
+          <textarea ,type="text" class="feedback-body__message" placeholder="Message">
+      </textarea>
+          <button class="feedback-body__submit">SEND</button>
+        </form>
+      </div>
+</body>
+</html>
+
+//Css Code:
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f0f0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+input, button, textarea {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-image: none;
+    background-color: #dadad3;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 5px;
+}
+input:focus, button:focus, textarea:focus {
+    outline: none;
+}
+textarea {
+    min-height: 50px;
+    resize: vertical;
+}
+button {
+    cursor: pointer;
+    font-weight: 500;
+}
+.feedback-card {
+    border: 1px solid black;
+    max-width: 980px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
+}
+.feedback-header {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+.feedback-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-body__message {
+    margin-top: 10px;
+}
+.feedback-body button {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+
+
+//Set A(2)
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe_mailing_list</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+
+<body>
+    <form class="form">
+        <p>Subscribr to our mailing list</p>
+        <p class="ast">* required indicate</p>
+        Email Address<br>
+        <input type="email" placeholder="*" required><br><br>
+        First Name<br>
+        <input type="text"><br><br>
+        Last Name<br>
+        <input type="text"><br><br>
+        <button class="btn1" type="button">Subscribe</button><br><br>
+    </form>
+</body>
+
+</html>
+
+//Css Code:
+
+*{
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    border-style: dotted;
+    width: 300px;
+    height: 320px;
+    padding-left:50px;
+    padding-top:30px;
+}
+.btn1{
+    border-radius: 4px;
+    width: 150px;
+    background: lightskyblue;
+}
+.ast{
+    font-size: 10px;
+    padding-left: 100px;
+    color: red;
+}
+::placeholder{
+    color: red;
+    padding-left: 155px;
+}
+
+
+//Set A(3)
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top_5_Resort_in_Goa</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <span class="b">Fillter by:<br><br>
+            <hr>
+            Review Score:<br><br>
+            <input type="checkbox">Superb:+9<br>
+            <input type="checkbox">Very Good:+8<br>
+            <input type="checkbox">Good:+7<br>
+            <input type="checkbox">Pleasant:+6
+        </span>
+
+        <span class="b1">
+            <img class="img1"
+                src="https://images.pexels.com/photos/261204/pexels-photo-261204.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <p>Agonda Serenity Resort <b class="right">+9.1</b><b class="right1">Superb</b></p>
+            <p><i style="font-size:24px" class="fa">&#xf041;</i> Agonda</p>
+            <p>Situated in Agonda, 50 meters from Agonda Beach,Agonda
+                Serenity <b>Resort</b> features accommidation with a restaurant, free
+                private parking, a bar and a garden. The accommodation offe..</p>
+            <a href="#">Show more</a>
+        </span>
+        <span class="b2"><img class="img2"
+                    src="https://images.pexels.com/photos/1450361/pexels-photo-1450361.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+                <p>Andores Resort And Spa <b class="right">+9.1</b><b class="right1">&#160;Superb</b></p>
+                <p><i style="font-size:24;" class="fa">&#xf041;</i>Calangute Beach,Calangute</p>
+                <p>Boasting an outdoor <b>swmming pool</b>,Andores <b>Resort And Spa</b>
+                    offers rooms in Calangute, a 12-minute walk from
+                    Infantaria and 1.2km from St.Alex Church, 2.6km from Tito's</p>
+                <a href="#">Show more</a>
+            </span>
+    </div>
+
+</body>
+
+</html>
+
+//Css Code:
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* .main{
+    border:2px solid black;
+} */
+span.b {
+    display: inline-block;
+    width: 150px;
+    height: 220px;
+
+    border: 1px solid black;
+
+}
+
+span.b1 {
+    display: inline-block;
+    width: 810px;
+    height: 200px;
+    float: right;
+    border: 1px solid black;
+}
+
+span.b2 {
+    display: inline-block;
+    width: 810px;
+    height: 200px;
+    float: right;
+    border: 1px solid black;
+}
+
+.img1,
+.img2 {
+    padding: 5px;
+    width: 190px;
+    height: 170px;
+    float: left;
+}
+
+.right {
+    float: right;
+    padding-right: 4px;
+    border: 1px solid blue;
+    color: white;
+    background: blue;
+    border-radius: 4px;
+
+}
+.box{
+    
+}
+.right1 {
+    float: right;
+}
+
+
+
+//Assignment 11 Set B:
+//Set B(1)
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+   <h2>SUBSCRIBE</h2>
+   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/256492/cXsiNryL.png" width="230px">
+    </div>
+   <p>
+      <span>Subscribe to get the latest</span>  news & updates.
+   </p>
+<div class="subscribe">
+	<div class="form">
+		<input type="email" class="form__email" placeholder="Your email address" />
+		<button class="form__button">Subscribe</button>
+	</div>
+	
+</div>
+
+</body>
+</html>
+
+
+//Css Code:
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+body{
+	font-size: 1.5rem;
+	color: rgb(223, 111, 37);
+	line-height: 130%;
+	letter-spacing: 0.07rem;
+	margin-bottom: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+span{
+	color: rgb(2, 1, 1);
+}
+
+.subscribe__title {
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 18px;
+}
+
+.subscribe__copy {
+	max-width: 450px;
+	text-align: center;
+	margin-bottom: 53px;
+	line-height: 1.5;
+}
+
+.form {
+	margin-bottom: 25px;
+}
+
+.form__email {
+	padding: 10px 90px;
+	border-radius: 2px;
+ 	border: 1px solid #CAD3DB;
+	width: 200px;
+	font-size: 15px;
+	color: #0F121F;
+}
+
+.form__button {
+	background: #982ca1;
+	padding: 5px;
+	border: none;
+	width: 100px;
+	height: 40px;
+	border-radius: -5px;
+    
+	font-size: 15px;
+	color: white;
+	box-shadow: 0 4px 20px rgba(173, 16, 187, 0.7);
+}
+
+.form__button:hover {
+	box-shadow: 0 10px 20px rgba(163, 65, 150, 0.7);
+}
+
+
+//Set B(2)
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+      <div class="container">
+        <div class="card login-card">
+          <div class="row no-gutters">
+            <div class="col-md-5">
+              <img src="image/login.jpg" class="login-card-img">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="brand-wrapper">
+                  <img src="image/logo.svg" class="logo">
+                </div>
+                <p class="login-card-description">Sign into your account</p>
+                <form action="#!">
+                  <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email adress">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="Password" class="sr-only">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="**********">
+                  </div>
+                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+                </form>
+                <a href="#!" class="forgot-password-link">Forgot password</a>
+                <p class="login-card-footer-text">Don't have an account? <a href="#!" class="text-reset">Register here</a></p>
+                <nav class="login-card-footer-nav">
+                  <a href="#!">Terms of use.</a>
+                  <a href="#!">Privacy policy</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+//Css Code:
+
+
+body{
+  font-family: "karla", sans-serif;
+  background-color: #d0d0ce;
+  min-height: 100vh;
+}
+.brand-wrapper{
+  margin-bottom: 19px;
+}
+.brand-wrapper .logo{
+  height: 37px;
+}
+.login-card{
+  border: 0;
+  border-radius: 27.5px;
+  box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+  overflow: hidden;
+}
+.login-card-img{
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.login-card .card-body{
+  padding: 85px 60px 60px;
+}
+@media (max-width 422px) {
+  .login-card .card-body{
+    padding: 35px 24px;
+  }
+}
+
+.login-card-description{
+  font-size: 25px;
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+.login-card form{
+  max-width: 326px;
+}
+
+.login-card .form-control{
+  border: 1px solid #d5dae2;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  min-height: 45px;
+  font-size: 13px;
+  line-height: 15;
+  font-weight: normal;
+}
+.login-card .form-control::-webkit-input-placeholder{
+  color: #919aa3;
+}
+.login-card .form-control::-moz-input-placeholder{
+  color: #919aa3;
+}
+.login-card .form-control::-ms-input-placeholder{
+  color: #919aa3;
+}
+.login-card .form-control::-o-input-placeholder{
+  color: #919aa3;
+}
+.login-card .form-control::placeholder{
+  color: #919aa3;
+}
+.login-card .login-btn{
+  padding: 13px 20px 12px;
+  background-color: #000;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.login-card .login-btn:hover{
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
+}
+.login-card .forgot-password-link{
+  font-size: 14px;
+  color: #919aa3;
+  margin-bottom: 12px;
+}
+.login-card-footer-text{
+  font-size: 16px;
+  color: #0d2366;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .login-card-footer-text{
+    margin-bottom: 24px;
+  }
+}
+.login-card-footer-nav a{
+  font-size: 14px;
+  color: #919aa3;
+}
+
+
+
+
+
+
+
+
+

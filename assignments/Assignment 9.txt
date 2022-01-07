@@ -1,0 +1,236 @@
+
+//Set A
+
+//Que1.
+<html>
+
+<head>
+    <title>Set A Q1</title>
+</head>
+
+<body style="text-align: center;">
+    <script>
+        var welcome;
+        var date = new Date();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        if (minute < 10) {
+            minute = "0" + minute;
+        }
+        if (second < 10) {
+            second = "0" + second;
+        }
+        if (hour < 12) {
+            welcome = "Good Morning";
+        } else if (hour < 17) {
+            welcome = "Good Afternoon";
+        } else {
+            welcome = "Good Evening";
+        }
+        document.write("<h1>" + welcome + "<br></font>" + "<br>Welcome to My Website<br>");
+        document.write("<br>" + hour + ":" + minute + ":" + second);  
+    </script>
+</body>
+
+</html>
+
+Q2.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Set A Q2</title>
+    <script type="text/javascript">
+        function factors() {
+            var n, a;
+            a = [];
+            n = document.frm.txt.value;
+            for (i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    a = a + [i] + ",";
+                }
+            }
+            document.getElementById("ans").innerHTML = "[" + a + "]";
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>Factors of Number</h1>
+    <form name="frm">
+        Number : <input type="text" name="txt">&nbsp;
+        <input type="button" value="Find" onclick="factors()">
+        <p id="ans"></p>
+    </form>
+</body>
+
+</html>
+
+Q3.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Set A Q3</title>
+</head>
+
+<body>
+    <h3>Display an Array</h3>
+    <p id="q"></p><br>
+    <h3>Sort elements of an Array</h3>
+    <p id="q2"></p><br>
+    <h3>Reverse elements of an Array</h3>
+    <p id="q3"></p><br>
+    <h3>Search a given element from an Array</h3>
+    <p id="q4"></p><br>
+
+    <script>
+        const num = [];
+        num[0] = " 300 ";
+        num[1] = " 400 ";
+        num[2] = " 100 ";
+        num[3] = " 200 ";
+        num[4] = " 500 ";
+        document.getElementById("q").innerHTML = num;
+        num.sort();
+        document.getElementById("q2").innerHTML = num;
+        num.sort();
+        num.reverse();
+        document.getElementById("q3").innerHTML = num;
+        function checkvalue(num) {
+            return num < 500;
+        }
+        document.getElementById("q4").innerHTML = num.find(checkvalue);
+    </script>
+</body>
+
+</html>
+
+Set B
+
+Q1.
+<!DOCTYPE html>
+
+<head>
+    <title>Set B Q1</title>
+    <script type="text/javascript">
+        function pow() {
+            document.write(Math.pow(8, 2));
+        }
+        function sqrt() {
+            document.write(Math.sqrt(16));
+        }
+        function abs() {
+            document.write(Math.abs(-23));
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="pow()" value="Power"><br><br>
+    <input type="button" onclick="sqrt()" value="Square Root"><br><br>
+    <input type="button" onclick="abs()" value="Absolute Value"><br><br>
+
+</body>
+
+</html>
+
+//Que.2.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Set B Q2</title>
+    <script>
+        var monthNames = ["Jan", "Feb", "March", "Apr", "May", "June",
+            "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+        function myFunction() {
+            var today = new Date();
+            var date = prompt("Please Enter Date :", today.getDate() + "-" + monthNames[today.getMonth()]);
+
+            if (date == "1-Jan") {
+                x = "Happy New Year";
+                document.getElementById("demo").innerHTML = x;
+            } else if (date == "14-Jan") {
+                x = "Happy Makar Sankranti";
+                document.getElementById("demo").innerHTML = x;
+            } else if (date == "25-Dec") {
+                x = "Merry Christmas";
+                document.getElementById("demo").innerHTML = x;
+            } else {
+                x = "Have A Good Day";
+                document.getElementById("demo").innerHTML = x;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="myFunction()">Enter Date</button>
+    <p id="demo"></p>
+</body>
+
+</html>
+
+//Que3.
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+    add(element) {
+        return this.items.push(element);
+    }
+    remove() {
+        if(this.items.length > 0) {
+            return this.items.pop();
+        }
+    }
+    clear(){
+        this.items = [];
+    }
+}
+
+let stack = new Stack();
+console.log("\nInsert an Element in Stack");
+stack.add(2);
+stack.add(4);
+stack.add(6);
+stack.add(8);
+stack.add(10);
+console.log(stack.items);
+console.log("\nDelete an Element from Stack");
+stack.remove();
+console.log(stack.items);
+console.log("\nDisplay the Content of Stack");
+console.log(stack.items);
+
+class Queue {
+    constructor() {
+        this.items = [];
+    }
+    enqueue(element) {
+        return this.items.push(element);
+    }
+    dequeue() {
+        if(this.items.length > 0) {
+            return this.items.shift();
+        }
+    } 
+    clear(){
+        this.items = [];
+    }
+}
+let queue = new Queue();
+console.log("\nInsert an Element in Queue");
+queue.enqueue(13);
+queue.enqueue(15);
+queue.enqueue(19);
+queue.enqueue(21);
+queue.enqueue(23);
+console.log(queue.items);
+console.log("\nDelete an Element from Queue");
+queue.dequeue();
+console.log(queue.items);
+console.log("\nDisplay the Content of Queue");
+console.log(queue.items);
