@@ -1,0 +1,26 @@
+*{
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    border-style: dotted;
+    width: 300px;
+    height: 320px;
+    padding-left:50px;
+    padding-top:30px;
+}
+.btn1{
+    border-radius: 4px;
+    width: 150px;
+    background: lightskyblue;
+}
+.ast{
+    font-size: 10px;
+    padding-left: 100px;
+    color: red;
+}
+::placeholder{
+    color: red;
+    padding-left: 155px;
+}
